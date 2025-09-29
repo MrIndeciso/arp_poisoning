@@ -117,7 +117,7 @@ char			send_payload_to_victim(const int sd,
 		  (const struct sockaddr *)device, sizeof(*device))) <= 0)
 	return (fprintf(stderr, ERROR_COULD_NOT_SEND), FALSE);
       fprintf(stdout, "[+] SPOOFED Packet sent to '%s'\n", victim_ip);
-      sleep(SPOOFED_PACKET_SEND_DELAY);
+      // sleep(SPOOFED_PACKET_SEND_DELAY);
     }
   return (TRUE);
 }
